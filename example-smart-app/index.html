@@ -167,8 +167,7 @@
 				$("#allergyDiv").html(retString);
 			});
 			
-			patientApi.fetchAll({type:'Procedure',query:{status:'active'}}).then(function(response) {
-				response = response[0];
+			patientApi.fetchAll({type:'Procedure'}).then(function(response) {
 				console.log(response);
 				
 				var retString = "<table class='dataTable'>";
